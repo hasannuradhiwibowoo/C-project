@@ -557,7 +557,7 @@ namespace Merk_Baju
 
                 //TUGAS ARRAY INPUT USER
                 
-                Console.WriteLine("==== INPUT ARRAY SESUAI KEINGINANMU ====");
+                /*Console.WriteLine("==== INPUT ARRAY SESUAI KEINGINANMU ====");
                 Console.Write("Masukkan jumlah array yang inginn anda buat :");
                 int jumArray = int.Parse(Console.ReadLine());
                 string[] namaArray = new string[jumArray];
@@ -571,9 +571,63 @@ namespace Merk_Baju
                 {
                     Console.WriteLine("Array ke-" + (i + 1) + " : " + namaArray[i]);
                 }
-                Console.ReadLine();
+                Console.ReadLine();*/
 
+                //ARRAY 2 DIMENSI
 
+                Console.WriteLine("==== Belajar Array 2 Dimensi di C# ====");
+                int[,] nilai = {
+                {80, 85, 90},
+                {75, 88, 92}
+                };
+                Console.WriteLine("Nilai siswa:");
+                for (int i = 0; i < 2; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        Console.Write(nilai[i, j] + " ");
+                    }
+                    Console.WriteLine();
+
+                }
+
+                //ARRAY 2 DIMESI INPUT USER
+
+                /*Console.WriteLine("==== Input Array 2 DImensi ====");
+                Console.Write("Masukkan jumlah baris : ");
+                int baris = int.Parse(Console.ReadLine());
+                Console.Write("Masukkan jumlah kolom : ");
+                int kolom = int.Parse(Console.ReadLine());
+                int[,] angka = new int[baris, kolom];
+                for (int b = 0; b < baris; b++)
+                {
+                    for (int k = 0; k < kolom; k++)
+                    {
+                        Console.Write("Masukkan nilai untuk elemen [{0},{1}] : ", b, k);
+                        angka[b, k] = int.Parse(Console.ReadLine());
+                    }
+                }
+                Console.WriteLine("==== Output ====");
+                for (int b = 0; b < baris; b++)
+                {
+                    for (int k = 0; k < kolom; k++)
+                    {
+                        Console.Write(angka[b, k] + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine("ingin mencoba lagi? (y/n) : ");
+                string cobalagi = Console.ReadLine();
+                if (cobalagi.ToLower() == "y")
+                {
+                    Console.Clear();
+                    Main(args);
+                }
+                else
+                {
+                    Console.WriteLine("terimakasih udah nyobain");
+                }
+                Console.ReadLine();*/
+            }
         }
-    } 
-}        
+    }        
