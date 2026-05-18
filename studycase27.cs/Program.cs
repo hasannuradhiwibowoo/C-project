@@ -529,7 +529,7 @@ namespace Merk_Baju
 
                 //TUGAS ARRAY
 
-                string[] namaSiswa = {"Hasan  ", "Bowo   ", "Arya   ", "Nabiil ", "Tamamoy"};
+                /*string[] namaSiswa = {"Hasan  ", "Bowo   ", "Arya   ", "Nabiil ", "Tamamoy"};
                 int[] nilaiSiswa = {80, 90, 50, 60, 70};
                 Console.WriteLine("==== Daftar siswa yang memiliki nilai tertinggi di kelas XRPL1 ====");
                 for (int i = 0; i < namaSiswa.Length; i++)
@@ -538,12 +538,40 @@ namespace Merk_Baju
                 }
                 Console.WriteLine();
                 Console.WriteLine("Selamat kepada siswa di atas karena telah mendapatkan nilai tertinggi di kelas XRPL1");
-                Console.ReadLine();
+                Console.ReadLine();*/
 
+                //Tugas Array 2
 
+                /*Console.WriteLine("==== Belajar Array di C# ====");
+                Console.Write("Masukkan jumlah siswa : ");
+                int jumsis = int.Parse(Console.ReadLine());
+                string[] namaSiswa = new string[jumsis];
+                int[] nilaiSiswa = new int[jumsis];
+                for (int i = 0; i < jumsis; i++)
+                {
+                    Console.Write("Masukkan nama siswa ke-" + (i + 1) + " : ");
+                    namaSiswa[i] = Console.ReadLine();
+                    Console.Write("Masukkan nilai siswa ke-" + (i + 1) + " : ");
+                    nilaiSiswa[i] = int.Parse(Console.ReadLine());
+                }*/
 
+                //TUGAS ARRAY INPUT USER
                 
-
+                Console.WriteLine("==== INPUT ARRAY SESUAI KEINGINANMU ====");
+                Console.Write("Masukkan jumlah array yang inginn anda buat :");
+                int jumArray = int.Parse(Console.ReadLine());
+                string[] namaArray = new string[jumArray];
+                for (int i = 0; i < jumArray; i++)
+                {
+                    Console.Write("Masukkan nama Array ke-" + (i + 1) + " : ");
+                    namaArray[i] = Console.ReadLine();
+                }
+                Console.WriteLine("==== Output Array yang sudah anda buat ====");
+                for (int i = 0; i < jumArray; i++)
+                {
+                    Console.WriteLine("Array ke-" + (i + 1) + " : " + namaArray[i]);
+                }
+                Console.ReadLine();
 
 
         }
